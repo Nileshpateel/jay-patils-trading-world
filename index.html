@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="Jay Patil's Trading World - Trading signals, market insights and a disciplined trading community.">
+<title>Jay Patil's Trading World | Trade Smart</title>
+
+<style>
+:root {
+  --bg:#080d18;
+  --card:#111b2c;
+  --gold:#e5b85c;
+  --white:#f5f6fa;
+  --muted:#a6b0c0;
+  --green:#36c58b;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  background:var(--bg);
+  color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a {text-decoration:none;color:inherit}
+.container {width:90%;max-width:1150px;margin:auto}
+header {
+  padding:20px 0;
+  border-bottom:1px solid #ffffff15;
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.logo {font-size:20px;font-weight:800;color:var(--gold)}
+.logo span {display:block;font-size:10px;letter-spacing:4px;color:white}
+nav ul {display:flex;gap:25px;list-style:none}
+nav ul a {color:var(--muted);font-size:14px}
+nav ul a:hover {color:var(--gold)}
+.btn {
+  display:inline-block;
+  padding:13px 22px;
+  border-radius:8px;
+  font-weight:bold;
+  background:var(--gold);
+  color:#101522;
+  transition:.2s;
+}
+.btn:hover {transform:translateY(-3px)}
+.btn-outline {
+  background:transparent;
+  color:var(--gold);
+  border:1px solid var(--gold);
+}
+.hero {
+  min-height:570px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:50px;
+  padding:70px 0;
+}
+.tag {
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+}
+h1 {
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.08;
+  margin:20px 0;
+}
+h1 span {color:var(--gold)}
+.hero p {color:var(--muted);font-size:17px;margin-bottom:28px}
+.actions {display:flex;flex-wrap:wrap;gap:12px}
+.preview {
+  background:linear-gradient(145deg,#17253b,#101725);
+  border:1px solid #ffffff20;
+  border-radius:20px;
+  padding:28px;
+  box-shadow:0 20px 60px #0008;
+}
+.preview-top {
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+  font-size:12px;
+  border-bottom:1px solid #ffffff20;
+  padding-bottom:15px;
+}
+.dot {
+  display:inline-block;
+  width:8px;height:8px;
+  background:var(--green);
+  border-radius:50%;
+  margin-right:6px;
+}
+.preview h2 {margin:25px 0 18px;color:var(--gold)}
+.signal-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.signal {
+  background:#ffffff09;
+  padding:15px;
+  border-radius:10px;
+}
+.signal small {display:block;color:var(--muted);margin-bottom:5px}
+.signal strong {font-size:14px}
+.note {
+  margin-top:18px;
+  padding:13px;
+  background:#e5b85c12;
+  border-left:3px solid var(--gold);
+  color:var(--muted);
+  font-size:12px;
+}
+section {padding:75px 0}
+.section-title {text-align:center;margin-bottom:40px}
+.section-title h2 {font-size:36px;margin-bottom:10px}
+.section-title p {color:var(--muted)}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card {
+  background:var(--card);
+  padding:28px;
+  border:1px solid #ffffff12;
+  border-radius:15px;
+  transition:.2s;
+}
+.card:hover {transform:translateY(-5px);border-color:#e5b85c66}
+.card .icon {font-size:30px;color:var(--gold)}
+.card h3 {margin:15px 0 8px}
+.card p {color:var(--muted);font-size:14px}
+.community {
+  background:linear-gradient(120deg,#182740,#111827);
+  padding:50px;
+  border-radius:20px;
+  text-align:center;
+  border:1px solid #ffffff15;
+}
+.community h2 {font-size:38px;margin-bottom:15px}
+.community p {color:var(--muted);margin-bottom:25px}
+.community .actions {justify-content:center}
+.steps {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.step {
+  padding:20px;
+  border-top:2px solid var(--gold);
+}
+.step h3 {margin-bottom:10px}
+.step p {color:var(--muted);font-size:14px}
+.disclaimer {
+  background:#e5b85c0c;
+  border:1px solid #e5b85c40;
+  padding:22px;
+  border-radius:12px;
+  color:var(--muted);
+  font-size:13px;
+}
+.disclaimer strong {color:var(--gold)}
+footer {
+  padding:30px 0;
+  text-align:center;
+  border-top:1px solid #ffffff15;
+  color:var(--muted);
+  font-size:13px;
+}
+footer strong {color:var(--gold)}
+@media(max-width:800px) {
+  nav ul {display:none}
+  .hero {grid-template-columns:1fr;padding:55px 0}
+  .cards,.steps {grid-template-columns:1fr}
+  .community {padding:30px 20px}
+  .community h2 {font-size:29px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">
+        JAY PATIL'S
+        <span>TRADING WORLD</span>
+      </a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#signals">Signals</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#community" class="btn">Join Community ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="container hero">
+  <div>
+    <div class="tag">DISCIPLINE • STRATEGY • CONSISTENCY</div>
+    <h1>
+      TRADE SMARTER.<br>
+      <span>THINK BIGGER.</span>
+    </h1>
+    <p>
+      Welcome to Jay Patil's Trading World.
+      Get market insights, educational trading setups
+      and connect with a community of passionate traders.
+      Learn to approach the market with discipline and confidence.
+    </p>
+    <div class="actions">
+      <a href="#community" class="btn">Join Our Community ↗</a>
+      <a href="#signals" class="btn btn-outline">Explore More</a>
+    </div>
+  </div>
+
+  <div class="preview">
+    <div class="preview-top">
+      <span><i class="dot"></i> MARKET SETUP</span>
+      <span>EDUCATIONAL EXAMPLE</span>
+    </div>
+    <h2>NIFTY · Sample Setup</h2>
+    <div class="signal-grid">
+      <div class="signal">
+        <small>Market View</small>
+        <strong>Wait for confirmation</strong>
+      </div>
+      <div class="signal">
+        <small>Setup</small>
+        <strong>Breakout / Retest</strong>
+      </div>
+      <div class="signal">
+        <small>Entry Plan</small>
+        <strong>After confirmation</strong>
+      </div>
+      <div class="signal">
+        <small>Risk Management</small>
+        <strong>Define Stop Loss</strong>
+      </div>
+    </div>
+    <div class="note">
+      Always follow your own trading plan.
+      Manage risk before entering any trade.
+      This is an illustrative example, not a live signal.
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">ABOUT US</div>
+      <h2>More Than Just Trading</h2>
+      <p>A community built around learning, discipline and market understanding.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Market Analysis</h3>
+        <p>Explore market trends, important levels and technical analysis.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Trading Signals</h3>
+        <p>Discover structured trade ideas with entry conditions and risk considerations.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Trading Community</h3>
+        <p>Connect with fellow traders, discuss market movements and share knowledge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signals">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">WHAT WE SHARE</div>
+      <h2>Explore Trading Opportunities</h2>
+      <p>Market education and setup discussions across different segments.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🇮🇳</div>
+        <h3>Indian Indices</h3>
+        <p>NIFTY, BANKNIFTY and other index market analysis.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🥇</div>
+        <h3>Commodities</h3>
+        <p>Gold, Silver, Crude Oil and commodity market insights.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💹</div>
+        <h3>Trading Education</h3>
+        <p>Technical analysis, price action and risk management concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">OUR APPROACH</div>
+      <h2>Plan. Execute. Review.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>01. Analyse</h3>
+        <p>Understand the market structure and identify possible opportunities.</p>
+      </div>
+      <div class="step">
+        <h3>02. Confirm</h3>
+        <p>Wait for confirmation and define entry, stop-loss and risk.</p>
+      </div>
+      <div class="step">
+        <h3>03. Improve</h3>
+        <p>Review every trade and keep learning from the experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="container">
+    <div class="community">
+      <div class="tag">JOIN THE COMMUNITY</div>
+      <h2>Your Trading Journey Starts Here.</h2>
+      <p>
+        Join Jay Patil's Trading World for market updates,
+        trading discussions and educational content.
+      </p>
+      <div class="actions">
+        <!-- REPLACE THESE WITH YOUR ACTUAL GROUP INVITE LINKS -->
+        <a href="https://wa.me/" target="_blank" rel="noopener" class="btn">WhatsApp Group ↗</a>
+        <a href="https://t.me/" target="_blank" rel="noopener" class="btn btn-outline">Telegram Channel ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="disclaimer">
+      <strong>IMPORTANT RISK DISCLAIMER</strong><br><br>
+      Trading and investing involve substantial financial risk.
+      Derivatives and leveraged products can result in significant losses.
+      All content provided through this website and its community
+      is for educational and informational purposes only.
+      It does not constitute investment advice or a recommendation
+      to buy or sell any financial instrument.
+      No profits or returns are guaranteed.
+      Always do your own research and consult a SEBI-registered
+      investment adviser where appropriate.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <strong>JAY PATIL'S TRADING WORLD</strong>
+    <p>Trade Smart. Stay Disciplined. Keep Learning.</p>
+    <p>© <span id="year"></span> Jay Patil's Trading World. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
